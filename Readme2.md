@@ -43,7 +43,7 @@ This application assists farmers by offering a comprehensive suite of tools to m
 ### 5. Plant Disease and Pest Prediction
 - **Input**: Farmer uploads images of crops showing signs of pests or diseases (supports single or dual inputs).
 - **Process**:
-  - Utilizes MobileNet, a lightweight deep learning model, to identify pest types and plant diseases.
+  - Utilizes custom AI model, to identify pest types and plant diseases.
   - Combines image analysis with soil and weather data for context-aware insights.
 - **Output**:
   - Identifies pest/disease type.
@@ -60,8 +60,8 @@ The app follows an intelligent, interconnected workflow to deliver a seamless ex
    - **Output**: Weather data (current + 14-day forecast) stored in JSON, downloadable with graphs.
    - **Next**: Data flows to Crop Recommender and Agricultural Advisor.
 
-2. **Soil Health Analysis**: Farmer uploads a soil health card image.
-   - **Output**: Soil parameters extracted, stored in JSON, downloadable with nutrient graphs.
+2. **Soil Health Analysis & Geofencing**: Farmer uploads a soil health card image.
+   - **Output**: Soil parameters extracted, stored in JSON, downloadable with nutrient graphs and geofenced map of that specific region.
    - **Next**: Data feeds into Crop Recommender and Agricultural Advisor.
 
 3. **Crop Recommendation**: Combines weather and soil JSON data.
